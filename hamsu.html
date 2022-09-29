@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대화 상자</title>
+    <script type="text/javascript">
+        // 메세지 상자
+        // window.alert("메세지 출력");
+
+        //선택 상자
+        // window.confirm("보고 있는 창을 닫으시겠습니까?")
+
+        //입력 상자
+        var i = prompt("점수 입력"); // 변수 . 재사용 !!
+
+        if(i >= 90 && i <=100){
+            document.write("입력된 점수 :" + i + "<br>");
+            document.write("등급 : A");
+        } else if( i >= 80 && i <=89 ){
+            document.write("입력된 점수 :" + i + "<br>");
+            document.write("B");
+        } else if( i >= 70 && i <=79 ){
+            document.write("입력된 점수 :" + i + "<br>");
+            document.write("c");
+        } else if( i >= 60 && i <=69 ){
+            document.write("입력된 점수 :" + i + "<br>");
+            document.write("D");
+        } else if( i >= 0 && i <=59 ){
+            document.write("입력된 점수 :" + i + "<br>");
+            document.write("F");
+        } else {
+            document.write("입력된 점수 :" + i + "<br>");
+            document.write("잘못된 점수입니다.");
+        };
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
