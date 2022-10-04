@@ -1,36 +1,29 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript">
-        function testFunc1() {
-            alert("첫 번째 버튼!");
-        };
-        function testFunc2() {
-            alert("두 번째 버튼!");
-        };
+<meta charset="utf-8">
+<title>function</title>
+<script type="text/javascript">
+    function testFunc(){
+        alert("함수를 실행하였습니다.");
+    };
 
-        // 함수명 실행
-        // testFunc();
+    // 함수명 실행
+    // testFunc();
 
-        // 변수에 의한 실행
-        // var i = testFunc();
+    // 변수에 의한 실행
+    // var i = testFunc();
 
-        // 다른 함수에 의한 실행
-        // setTimeout("testFunc()", 5000); // testFunc() 따옴표 안에 들어있지만 문자 아님
-        // setTimeout(testFunc,5000);
-
-
-    </script>
-    <title>Document</title>
+    // 다른 함수에 의한 실행
+    // setTimeout("testFunc()", 5000);
+    // setTimeout(testFunc, 5000);
+</script>
 </head>
 <!-- 이벤트에 의한 실행 -->
-<body> 
-<!-- onload="testFunc()" -->
-       <!--testFunc() 괄호 꼭 !!! -->
-<button type="button" onclick="testFunc1()">button1111</button> <br>
-<button type="button" onclick="testFunc2()">button2222</button>
+<body onload="testFunc()"> 
+<!-- onload : 문서의 모든 콘텐츠(images, script, css, etc가 로드된 후 발생하는 이벤트)
+DOM의 standard 이벤트로 html 로딩이 끝난 후 시작. 화면에 필요한 모든 요소들이 웹 브라우저 메모리에 모두 올려진 다음
+실행되며 화면이 그려진 다음 메시징이나 이미지 관련 요소가 모두 올려진 다음의 애니메이션에 적합 -->
+    
 </body>
 </html>
