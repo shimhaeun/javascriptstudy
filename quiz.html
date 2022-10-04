@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, input, button { font-size:24px }
+        .redText{color:red;border:2px solid #f00}
+        .greenText{color:green;border:2px solid green}
+        .blueText{color:blue;border:2px solid blue}
+    </style>
+    <p id="changeText">클릭한 버튼에 따라 다른 스타일이 적용됩니다.</p>
+    <p><input type="button" id="rBtn"onclick="redColor()">Red</button></p>
+    <p><input type="button" id="gBtn"onclick="greenColor()">초록</button></p>
+    <p><input type="button" id="bBbtn"onclick="blueColor()">파랑</button></p>
+    <script type="text/javascript">
+        // 문서가 준비되었다면 안에 있는 내용들은 그때 실행해 줘. 
+        window.onload = function() {
+            rBtn.onclick = function() {
+                document.getElementById("changeText").className="redText"
+            };
+            // 빨강 버튼을 클릭했을 때 
+            gBtn.onclick = function() {
+                document.getElementById("changeText").className="greenText"
+            };
+            bBtn.onclick = function() {
+                document.getElementById("changeText").className="blueText"
+            };
+
+        }
+        var rBtn = document.getElementById("rBtn");
+        rBtn.addEventListener("click",function()) {
+            document.getElementById("changeText").className = "redText";
+        }
+        // var gBtn = document.getElementById("gBtn");
+        // var bBtn = document.getElementById("bBtn");
+
+        // 빨강 버튼을 클릭하면 문장의 글자색을 빨간색으로 바꾸기
+        // obj.eventHandler = function() { 문장 }
+        // function redColor() {
+        //     document.getElementById("changeText").className="redText";
+        // }
+        // function greenColor() {
+        //     document.getElementById("changeText").className="greenText";
+        // }
+        // function blueColor() {
+        //     document.getElementById("changeText").className="blue";
+        // }
+    </script>
+</head>
+<body>
+</body>
+</html>
